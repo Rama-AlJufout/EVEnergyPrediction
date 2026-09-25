@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-Update README
-=======
-<<<<<<< HEAD
 # EV Energy Prediction
 
 ### Electric Vehicle Energy Consumption Prediction
@@ -229,6 +225,3 @@ Current focus:
 
 Results and final model performance will be added after the Machine Learning experiments are completed.
 =======
-Update README
->>>>>>> cc86009 (Update README file)
->>>>>>> e1c94bd1bc37d1f1c6d9b296291a5d48d89e2703
