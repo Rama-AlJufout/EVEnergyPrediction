@@ -4,7 +4,7 @@
 
 **Team Members:**  
 - Rama AlJufout
-- Areen Ahmad AlJarrah
+- Areen Ahmad  AlJarrah
 - Osama Nayfeh
 - Abdallah AlDaradkeh
 - Ra'fat osama falah AlDiabat
