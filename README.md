@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-Update README
-=======
-<<<<<<< HEAD
 # EV Energy Prediction
 
 ### Electric Vehicle Energy Consumption Prediction
