@@ -1,17 +1,21 @@
-# ⚡ EV Energy Prediction
+<<<<<<< HEAD
+Update README
+=======
+<<<<<<< HEAD
+# EV Energy Prediction
 
 ### Electric Vehicle Energy Consumption Prediction
 
 **Team Members:**  
 - Rama AlJufout
-- Areen AlJarrah
+- Areen Ahmad AlJarrah
 - Osama Nayfeh
 - Abdallah AlDaradkeh
 - Ra'fat osama falah AlDiabat
 
 ---
 
-## 1. 📌 Business Problem
+## 1. Business Problem
 
 Electric vehicle energy consumption is affected by many real-world factors, including driving behavior, road and traffic conditions, weather, and battery status. Accurately estimating energy consumption can help EV users and transportation systems better understand energy usage and support more efficient vehicle operation.
 
@@ -19,7 +23,7 @@ Electric vehicle energy consumption is affected by many real-world factors, incl
 
 ---
 
-## 2. 🎯 Project Objectives
+## 2. Project Objectives
 
 The main objectives of EV Energy Prediction are:
 
@@ -43,7 +47,7 @@ The project will be considered successful if the developed model can:
 
 ---
 
-## 3. 📊 Dataset Source & Overview
+## 3. Dataset Source & Overview
 
 The dataset used in this project is the **EV Energy Consumption Dataset** available on Kaggle.
 
@@ -62,7 +66,7 @@ The dataset contains parameters related to:
 
 ---
 
-## 4. 🎯 Target Variable
+## 4. Target Variable
 
 The target variable for the Machine Learning model is:
 
@@ -78,33 +82,33 @@ The model will learn the relationship between the input features and energy cons
 
 ---
 
-# 📁 Dataset Description
+# Dataset Description
 
 The dataset provides detailed information about factors that can affect energy consumption in electric vehicles.
 
 The available information can be divided into several main categories.
 
-## 🚗 Driving Parameters
+## Driving Parameters
 
 - **Speed (`Speed_kmh`)** — Vehicle speed measured in kilometers per hour.
 - **Acceleration (`Acceleration_ms2`)** — Vehicle acceleration measured in meters per second squared.
 - **Driving Mode (`Driving_Mode`)** — Selected driving mode, such as Eco, Normal, or Sport.
 
-## 🛣️ Road & Traffic Conditions
+## Road & Traffic Conditions
 
 - **Road Type (`Road_Type`)** — Type of road, such as Highway, Urban, or Rural.
 - **Traffic Condition (`Traffic_Condition`)** — Traffic level affecting the vehicle.
 - **Slope (`Slope_%`)** — Road slope percentage.
 - **Distance Travelled (`Distance_Travelled_km`)** — Distance travelled by the vehicle in kilometers.
 
-## 🌦️ Weather Factors
+## Weather Factors
 
 - **Temperature (`Temperature_C`)** — Ambient temperature in Celsius.
 - **Humidity (`Humidity_%`)** — Relative humidity percentage.
 - **Wind Speed (`Wind_Speed_ms`)** — Wind speed measured in meters per second.
 - **Weather Condition (`Weather_Condition`)** — Weather conditions such as Sunny, Rainy, Snowy, or Foggy.
 
-## 🔋 Vehicle & Battery Attributes
+## Vehicle & Battery Attributes
 
 - **Battery State (`Battery_State_%`)** — Current battery state of charge (%).
 - **Battery Voltage (`Battery_Voltage_V`)** — Battery voltage measured in volts.
@@ -114,23 +118,23 @@ The available information can be divided into several main categories.
 
 ---
 
-# 🔑 Key Features
+# Key Features
 
 For the initial project, we plan to focus on approximately **10–15 input features** rather than using every available column.
 
 | Category | Features |
 |---|---|
-| 🚗 Driving | Speed, Acceleration, Driving Mode |
-| 🛣️ Road & Traffic | Road Type, Traffic Condition, Slope, Distance Travelled |
-| 🌦️ Weather | Temperature, Humidity, Wind Speed, Weather Condition |
-| 🔋 Vehicle & Battery | Battery State, Battery Voltage, Battery Temperature, Tire Pressure |
-| 🎯 Target | Energy Consumption (kWh) |
+| Driving | Speed, Acceleration, Driving Mode |
+| Road & Traffic | Road Type, Traffic Condition, Slope, Distance Travelled |
+| Weather | Temperature, Humidity, Wind Speed, Weather Condition |
+| Vehicle & Battery | Battery State, Battery Voltage, Battery Temperature, Tire Pressure |
+| Target | Energy Consumption (kWh) |
 
 Final feature selection will be performed after data exploration and preprocessing.
 
 ---
 
-# 🤖 Machine Learning Approach
+# Machine Learning Approach
 
 EV Energy Prediction is formulated as a **Supervised Learning Regression** problem.
 
@@ -144,7 +148,7 @@ Predicted **Energy Consumption (kWh)**
 
 ---
 
-# 💡 Example Use Case
+# Example Use Case
 
 A user provides the current vehicle and environmental conditions:
 
@@ -175,21 +179,21 @@ XX.XX kWh
 
 ---
 
-# 🌱 Project Value
+# Project Value
 
 EV Energy Prediction can provide useful insights into the factors that influence EV energy consumption.
 
 Potential applications include:
 
-- ⚡ Energy consumption prediction
-- 🚗 Understanding efficient driving behavior
-- 🔋 Better EV energy management
-- 📊 Data-driven vehicle performance analysis
-- 🌱 Supporting more sustainable transportation
+- Energy consumption prediction
+- Understanding efficient driving behavior
+- Better EV energy management
+- Data-driven vehicle performance analysis
+- Supporting more sustainable transportation
 
 ---
 
-# 🛠️ Technologies
+# Technologies
 
 - **Python**
 - **Jupyter Notebook**
@@ -198,7 +202,7 @@ Additional Machine Learning libraries may be used depending on the final model.
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 EV Energy Prediction/
@@ -212,7 +216,7 @@ EV Energy Prediction/
 
 ---
 
-# 🚧 Project Status
+# Project Status
 
 **Status: In Development**
 
@@ -224,3 +228,7 @@ Current focus:
 - Feature selection
 
 Results and final model performance will be added after the Machine Learning experiments are completed.
+=======
+Update README
+>>>>>>> cc86009 (Update README file)
+>>>>>>> e1c94bd1bc37d1f1c6d9b296291a5d48d89e2703
