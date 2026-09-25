@@ -1,13 +1,13 @@
-# ⚡ VoltSense
+# ⚡ EV Energy Prediction
 
 ### Electric Vehicle Energy Consumption Prediction
 
 **Team Members:**  
-- [Rama AlJufout]
-- [Areen AlJarrah]
-- [Osama Nayfeh]
-- [Abdallah AlDaradkeh]
-- [Ra'fat AlDiabat]
+- Rama AlJufout
+- Areen AlJarrah
+- Osama Nayfeh
+- Abdallah AlDaradkeh
+- Ra'fat AlDiabat
 
 ---
 
@@ -15,13 +15,13 @@
 
 Electric vehicle energy consumption is affected by many real-world factors, including driving behavior, road and traffic conditions, weather, and battery status. Accurately estimating energy consumption can help EV users and transportation systems better understand energy usage and support more efficient vehicle operation.
 
-**VoltSense** aims to use Machine Learning to predict the energy consumption of an electric vehicle based on these real-world conditions.
+**EV Energy Prediction** aims to use Machine Learning to predict the energy consumption of an electric vehicle based on these real-world conditions.
 
 ---
 
 ## 2. 🎯 Project Objectives
 
-The main objectives of VoltSense are:
+The main objectives of EV Energy Prediction are:
 
 - Build a Machine Learning model to predict **EV Energy Consumption (kWh)**.
 - Analyze how driving behavior affects energy consumption.
@@ -132,7 +132,7 @@ Final feature selection will be performed after data exploration and preprocessi
 
 # 🤖 Machine Learning Approach
 
-VoltSense is formulated as a **Supervised Learning Regression** problem.
+EV Energy Prediction is formulated as a **Supervised Learning Regression** problem.
 
 **Input:**
 
@@ -141,34 +141,6 @@ Driving Conditions + Road & Traffic Conditions + Weather Conditions + Vehicle & 
 **Output:**
 
 Predicted **Energy Consumption (kWh)**
-
-```text
-Real-World EV Conditions
-          ↓
-   Data Preprocessing
-          ↓
-    Feature Selection
-          ↓
-   Machine Learning
-          ↓
-Predicted Energy Consumption
-```
-
----
-
-# 🔬 Project Methodology
-
-1. **Data Collection**
-2. **Data Understanding**
-3. **Data Cleaning**
-4. **Exploratory Data Analysis (EDA)**
-5. **Feature Selection**
-6. **Data Preprocessing**
-7. **Train/Test Split**
-8. **Model Development**
-9. **Model Evaluation**
-10. **Model Comparison**
-11. **Energy Consumption Prediction**
 
 ---
 
@@ -205,7 +177,7 @@ XX.XX kWh
 
 # 🌱 Project Value
 
-VoltSense can provide useful insights into the factors that influence EV energy consumption.
+EV Energy Prediction can provide useful insights into the factors that influence EV energy consumption.
 
 Potential applications include:
 
@@ -229,7 +201,7 @@ Additional Machine Learning libraries may be used depending on the final model.
 # 📂 Project Structure
 
 ```text
-VoltSense/
+EV Energy Prediction/
 │
 ├── data/
 │   └── EV_Energy_Consumption.csv
