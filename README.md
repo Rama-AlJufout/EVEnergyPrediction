@@ -6,7 +6,7 @@
 - Rama AlJufout
 - Areen Ahmad  AlJarrah
 - Osama Nayfeh
-- Abdallah Daradkeh
+- Abdallah alDaradkeh
 - Ra'fat osama falah AlDiabat
 
 ---
