@@ -204,23 +204,26 @@ Additional Machine Learning libraries may be used depending on the final model.
 EV Energy Prediction/
 │
 ├── data/
-│   └── EV_Energy_Consumption.csv
+│   ├── EV_Energy_Consumption.csv          # Raw original dataset (5,000 rows, 19 cols)
+│   └── cleaned_EV_Energy_Consumption.csv  # Cleaned & validated dataset
 │
-├── README.md
-└── requirements.txt
+├── notebook.ipynb                         # Milestone 2: Data Understanding & Cleaning Notebook
+├── README.md                              # Project documentation & Data Dictionary
+└── requirements.txt                       # Project dependencies
 ```
 
 ---
 
-# Project Status
+# Project Status & Milestones
 
-**Status: In Development**
+- [x] **Milestone 1**: Business Problem, Target Definition, Project Proposal & Setup
+- [x] **Milestone 2**: Data Understanding, Data Quality Audit, Outliers Investigation & Cleaning
+  - Audited missing values (0 missing values, 100% complete)
+  - Verified duplicate records (0 duplicate rows)
+  - Converted `Timestamp` to `datetime64[ns]`
+  - Added human-readable mapped categories (`Driving_Mode_Desc`, `Road_Type_Desc`, `Traffic_Condition_Desc`, `Weather_Condition_Desc`)
+  - Investigated outliers using IQR and domain bounds (retained physically valid extremes)
+  - Exported verified clean dataset: `data/cleaned_EV_Energy_Consumption.csv`
+- [ ] **Milestone 3**: Exploratory Data Analysis (EDA) & Feature Preparation
+- [ ] **Milestone 4**: Model Training, Evaluation & Comparison
 
-Current focus:
-
-- Dataset understanding
-- Data preprocessing
-- Exploratory Data Analysis
-- Feature selection
-
-Results and final model performance will be added after the Machine Learning experiments are completed.
