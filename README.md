@@ -110,13 +110,13 @@ The available information can be divided into several main categories.
 - **Battery Voltage (`Battery_Voltage_V`)** — Battery voltage measured in volts.
 - **Battery Temperature (`Battery_Temperature_C`)** — Battery temperature measured in Celsius.
 - **Tire Pressure (`Tire_Pressure_psi`)** — Tire pressure measured in PSI.
-- **Vehicle Weight** — Vehicle weight, if available in the final dataset and selected for modeling.
+- **Vehicle Weight** — Vehicle weight, Available in the original dataset but excluded from the selected features used for modeling.
 
 ---
 
 # Key Features
 
-For the initial project, we plan to focus on approximately **10–15 input features** rather than using every available column.
+For the initial project, we plan to focus on approximately **15 input features** rather than using every available column.
 
 | Category | Features |
 |---|---|
