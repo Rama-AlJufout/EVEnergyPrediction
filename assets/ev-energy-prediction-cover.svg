@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 420" role="img" aria-labelledby="title desc">
+  <title id="title">EV Energy Prediction</title>
+  <desc id="desc">A banner for an electric vehicle energy consumption prediction project.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#062f35"/>
+      <stop offset="1" stop-color="#0b827b"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#26d6c6" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#26d6c6"/>
+      <stop offset="1" stop-color="#26d6c6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="420" rx="28" fill="url(#background)"/>
+  <path d="M0 335 C310 255 545 380 830 300 S1290 220 1600 300" fill="none" stroke="url(#road)" stroke-width="8"/>
+  <path d="M0 360 C310 280 545 405 830 325 S1290 245 1600 325" fill="none" stroke="#b8fff5" stroke-dasharray="20 24" stroke-linecap="round" stroke-opacity=".65" stroke-width="3"/>
+  <g transform="translate(1130 92)" fill="none" stroke="#b8fff5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 154h188l-18-66c-4-15-17-25-32-25H76c-15 0-28 10-32 25z" stroke-width="7"/>
+    <path d="M55 65 78 30h80l23 35M0 154h25m188 0h25M53 154a18 18 0 1 0 36 0m93 0a18 18 0 1 0 36 0" stroke-width="7"/>
+    <path d="M105 30h26" stroke-width="7"/>
+  </g>
+  <text x="92" y="156" fill="#b8fff5" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="5">MACHINE LEARNING FOR ELECTRIC MOBILITY</text>
+  <text x="88" y="238" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">EV Energy Prediction</text>
+  <text x="94" y="286" fill="#d8fffa" font-family="Arial, Helvetica, sans-serif" font-size="27">Predicting the energy an EV needs from the way it moves.</text>
+</svg>
