@@ -5,7 +5,7 @@
 ### A data-driven way to understand and predict electric-vehicle energy consumption
 
 <p>
-  <img src="assets/ev-energy-prediction-cover.svg" alt="EV Energy Prediction banner" width="100%">
+  <img src="assets/EV Energy Prediction Banner.png" alt="EV Energy Prediction banner" width="100%">
 </p>
 
 <p>
