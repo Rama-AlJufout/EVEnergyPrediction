@@ -345,7 +345,6 @@ Open [`code/EV_Energy_Prediction.ipynb`](code/EV_Energy_Prediction.ipynb) and ru
 - Rama AlJufout
 - Areen Ahmad AlJarrah
 - Osama Nayfeh
-- Abdallah Al-Daradkeh
 - Ra'fat Osama Falah AlDiabat
 
 ## References
