@@ -121,31 +121,31 @@ The complete dataset contains 5,000 observations. The observed target ranges fro
 
 The implementation is available in [`code/EV_Energy_Prediction.ipynb`](code/EV_Energy_Prediction.ipynb). Each stage has a documented action and a recorded result.
 
-### 01 — Load and understand
+### 01- Load and understand
 
 The notebook imports the analysis stack, loads the CSV, and parses `Timestamp` as datetime.
 
 **Result:** The modeling input starts at **5,000 rows × 19 columns**. Because `Energy_Consumption_kWh` is continuous, the task is framed as supervised regression.
 
-### 02 — Audit and clean
+### 02- Audit and clean
 
 The workflow creates a working copy, checks exact duplicates, validates timestamps, and sorts observations chronologically.
 
 **Result:** The main working table remains **5,000 × 19** with no invalid timestamps removed. The separate dirty file demonstrates why these checks matter: it contains **5,025 rows, 24 duplicate rows, and 5,038 missing cells**, along with implausible extremes.
 
-### 03 — Define the prediction problem
+### 03-Define the prediction problem
 
 `Energy_Consumption_kWh` is separated as the target. `Driving_Mode`, `Road_Type`, `Traffic_Condition`, and `Weather_Condition` are handled as categorical features because their numeric values are category codes, not measurements.
 
 **Result:** The model does not assume that category code `3` is mathematically greater than category code `1`.
 
-### 04 — Explore the data
+### 04- Explore the data
 
 The notebook generates a target histogram, categorical box plots, numerical scatter plots, and correlation analysis.
 
 **Result:** The charts expose target spread and feature associations while the interpretation stays careful: an association is not a causal explanation.
 
-### 05 — Inspect outliers
+### 05-Inspect outliers
 
 The IQR rule is applied to numerical features and the target:
 
@@ -156,7 +156,7 @@ upper bound = Q3 + 1.5 × IQR
 
 **Result:** The notebook reports **zero IQR outliers** in the inspected columns. This is an inspection result, not a reason to delete valid observations automatically.
 
-### 06 — Engineer time features
+### 06- Engineer time features
 
 The timestamp is transformed into:
 
@@ -165,7 +165,7 @@ The timestamp is transformed into:
 
 **Result:** **Zero timestamps failed to parse**, and the two time features were created successfully. The raw timestamp is removed from model inputs after its useful information is extracted.
 
-### 07 — Build a leakage-aware feature matrix
+### 07-Build a leakage-aware feature matrix
 
 The model excludes:
 
@@ -175,7 +175,7 @@ The model excludes:
 
 **Result:** The notebook reports **18 input features before preprocessing**.
 
-### 08 — Split and preprocess safely
+### 08-Split and preprocess safely
 
 The data is split with `random_state=42`:
 
@@ -189,13 +189,13 @@ Imputation, one-hot encoding, and scaling are fitted inside a scikit-learn `Pipe
 
 **Result:** Validation and test information is not used to learn preprocessing parameters. The final test partition stays untouched until model selection is complete.
 
-### 09 — Compare candidate models
+### 09-Compare candidate models
 
 The workflow compares Linear Regression, KNN Regressor, Decision Tree, and Random Forest. It also runs five-fold cross-validation on the training partition.
 
 **Result:** Linear Regression achieves the lowest validation RMSE (**0.4969 kWh**) and is selected.
 
-### 10 — Evaluate once on unseen data
+### 10- Evaluate once on unseen data
 
 The selected pipeline predicts the held-out test partition.
 
