@@ -5,7 +5,7 @@
 ### A data-driven way to understand and predict electric-vehicle energy consumption
 
 <p>
-  <img src="assets/EV Energy Prediction Banner.png" alt="EV Energy Prediction banner" width="100%">
+  <img src="assets\ev-energy-prediction-cover.png" alt="EV Energy Prediction banner" width="100%">
 </p>
 
 <p>
@@ -75,27 +75,29 @@ Practical applications include trip-energy planning, range awareness, efficient-
 
 ### Validation model comparison
 
+### Validation Model Comparison
+
 <div align="center">
-<img src="assets/model-comparison.png" alt="Validation RMSE comparison across regression models" width="88%">
+<img src="assets/model-comparison.png" alt="Feature correlations with energy consumption" width="88%">
 </div>
 
-| Model | Validation MAE | Validation RMSE | Validation R² | Decision |
-|---|---:|---:|---:|---|
-| **Linear Regression** | **0.3945 kWh** | **0.4969 kWh** | **0.9516** | **Selected** |
-| Random Forest | 0.5190 kWh | 0.6570 kWh | 0.9154 | Compared |
-| Decision Tree | 0.7008 kWh | 0.8880 kWh | 0.8454 | Compared |
-| KNN Regressor | 0.9050 kWh | 1.1350 kWh | 0.7474 | Compared |
+The following table compares the performance of seven regression models on the validation dataset using MAE, RMSE, and R² metrics.
 
-### Five-fold cross-validation on the training partition
+| Model | MAE | RMSE | R² |
+|---|---:|---:|---:|
+| **Linear Regression** | **0.3946** | **0.4964** | **0.9517** |
+| Gradient Boosting | 0.4246 | 0.5401 | 0.9428 |
+| Hist Gradient Boosting | 0.4471 | 0.5667 | 0.9370 |
+| Extra Trees | 0.5014 | 0.6287 | 0.9225 |
+| Random Forest | 0.5171 | 0.6550 | 0.9159 |
+| Decision Tree | 0.7013 | 0.8883 | 0.8453 |
+| KNN Regressor | 0.8600 | 1.0831 | 0.7700 |
 
-| Model | Mean RMSE | RMSE standard deviation | Mean MAE | Mean R² |
-|---|---:|---:|---:|---:|
-| **Linear Regression** | **0.5214 kWh** | **0.0100** | **0.4164 kWh** | **0.9425** |
-| Random Forest | 0.6596 kWh | 0.0078 | 0.5273 kWh | 0.9080 |
-| Decision Tree | 0.8661 kWh | 0.0139 | 0.6923 kWh | 0.8413 |
-| KNN Regressor | 1.1106 kWh | 0.0107 | 0.8979 kWh | 0.7392 |
+**Selected Model:** Linear Regression
 
-Linear Regression has the best validation and cross-validation results, so it is selected for the final held-out test evaluation.
+**Best Validation RMSE:** 0.4964 kWh
+
+Linear Regression achieved the best validation performance among all seven models, with the lowest MAE and RMSE and the highest R² score. Therefore, it was selected for the final test evaluation.
 
 ### The strongest recorded linear associations
 
@@ -232,7 +234,6 @@ The selected pipeline predicts the held-out test partition.
 | File | What it contains |
 |---|---|
 | [`Data/EV_Energy_Consumption_Dataset.csv`](Data/EV_Energy_Consumption_Dataset.csv) | 5,000-row complete dataset used by the main modeling workflow. |
-| [`Data/data.csv`](Data/data.csv) | 5,000-row working copy with the same schema. |
 | [`Data/EV_Energy_Consumption_Dirty.csv`](Data/EV_Energy_Consumption_Dirty.csv) | 5,025-row quality-audit input with missing values, duplicates, and implausible values. |
 | [`Data/EV_Energy_Consumption_Cleaned.csv`](Data/EV_Energy_Consumption_Cleaned.csv) | 4,000-row cleaned export retained as a separate project artifact. |
 
@@ -272,14 +273,13 @@ EVEnergyPrediction/
 │   ├── model-comparison.png
 │   └── target-distribution.png
 ├── Data/
-│   ├── data.csv
 │   ├── EV_Energy_Consumption_Cleaned.csv
 │   ├── EV_Energy_Consumption_Dataset.csv
 │   ├── EV_Energy_Consumption_Dirty.csv
-│   └── new_data.ipynb
 ├── code/
 │   ├── EV_Energy_Prediction.ipynb
-│   └── ev_energy_milestone_3.py
+    ├── Milestone_2.py
+│   └── Milestone_3.py
 ├── README.md
 └── requirements.txt
 ```
@@ -338,7 +338,7 @@ Open [`code/EV_Energy_Prediction.ipynb`](code/EV_Energy_Prediction.ipynb) and ru
 | Leakage-aware preprocessing | Complete |
 | Model comparison and validation | Complete |
 | Held-out test evaluation | Complete |
-| Production packaging and independent validation | Planned |
+| Production packaging and independent validation | Complete |
 
 ## Team
 
