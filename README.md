@@ -203,6 +203,29 @@ The selected pipeline predicts the held-out test partition.
 
 **Result:** The final evaluation is **MAE 0.4070 kWh**, **RMSE 0.5056 kWh**, and **R² 0.9458**. The close validation and test RMSE values provide a useful consistency check for this split.
 
+### Actual vs. Predicted Energy Consumption
+
+The following table compares the actual energy consumption values with the values predicted by the selected Linear Regression model for the first 10 test records.
+
+The absolute error represents the difference between the actual and predicted values.
+
+| Test Index | Actual Energy (kWh) | Predicted Energy (kWh) | Absolute Error (kWh) |
+|---:|---:|---:|---:|
+| 790 | 10.752 | 10.575 | 0.177 |
+| 2879 | 8.862 | 8.728 | 0.134 |
+| 2372 | 10.050 | 9.671 | 0.379 |
+| 1351 | 12.799 | 13.254 | 0.455 |
+| 3382 | 6.283 | 6.108 | 0.175 |
+| 3433 | 8.448 | 8.911 | 0.463 |
+| 1129 | 12.804 | 12.818 | 0.014 |
+| 549 | 5.897 | 5.309 | 0.588 |
+| 2835 | 7.261 | 7.494 | 0.233 |
+| 626 | 5.081 | 5.532 | 0.451 |
+
+The results show that the predicted values are generally close to the actual values. The absolute error helps measure how far each prediction is from the real energy consumption.
+
+The smallest error is 0.014 kWh, while the largest error is 0.588 kWh among these 10 records.
+
 ## Data understanding
 
 ### Dataset schema
